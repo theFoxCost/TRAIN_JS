@@ -1,0 +1,66 @@
+$green: rgb(5, 143, 0);
+$red: rgba(255, 0, 0);
+$black: #000;
+$blue: rgb(0, 82, 175);
+$yellow: #ffe600;
+$font-color: #ffff;
+body {
+    background-color: $black;
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    display: flexbox;
+    padding: 20px;
+    width: auto;
+    height: auto;
+    justify-content: center;
+
+        %btn1{
+            padding: 5px;
+            font-size: 25px;
+            font-family: monospace;
+            height: auto;
+            width: auto;
+            border: #000000 2.5px solid;
+            transition: 0.4s ease;
+            margin: 30px;
+            color: $font-color;
+            border-radius: 5px;
+            text-align: center;
+            cursor: pointer;
+            border: $font-color;
+
+        }
+
+        #btn1{
+            @extend %btn1;
+        }
+
+
+        
+        #btn2{
+        @extend %btn1;
+        }
+
+        
+        #btn3{
+        @extend %btn1;
+        }
+
+
+        #btn4{
+        @extend %btn1;
+        }
+
+
+        #btn5{
+        @extend %btn1;
+        }
+
+    border: whitesmoke;
+    opacity: 0.99999;
+    color: white;
+}
+
